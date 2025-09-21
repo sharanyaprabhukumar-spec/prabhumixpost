@@ -17,7 +17,7 @@ export default defineConfig(({command, mode}) => {
     let serverConfig = {}
 
     if (host && homeDir) {
-        const certificatesPath = env.CERTIFICATES_PATH !== undefined ? env.CERTIFICATES_PATH : `.config/valet/Certificates/${host}`;
+        const certificatesPath = env.CERTIFICATES_PATH !== undefined ? env.CERTIFICATES_PATH : MIXPOST_DEV_VALET_KEY_PATH;
 
         serverConfig = {
             https: {
