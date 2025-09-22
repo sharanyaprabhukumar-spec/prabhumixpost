@@ -12,13 +12,6 @@
     ],
     "homepage": "https://github.com/inovector/mixpost",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Dima Botezatu",
-            "email": "dima@inovector.com",
-            "role": "Developer"
-        }
-    ],
     "require": {
         "php": "^8.2",
         "ext-fileinfo": "*",
