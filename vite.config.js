@@ -20,14 +20,7 @@ export default defineConfig(({command, mode}) => {
         const certificatesPath = env.CERTIFICATES_PATH !== undefined ? env.CERTIFICATES_PATH : `.config/valet/Certificates/${host}`;
 
         serverConfig = {
-            https: {
-                key: fs.readFileSync(
-                    path.resolve(homeDir, `${certificatesPath}.key`),
-                ),
-                cert: fs.readFileSync(
-                    path.resolve(homeDir, `${certificatesPath}.crt`),
-                ),
-            },
+            https: {},
             hmr: {
                 host
             },
